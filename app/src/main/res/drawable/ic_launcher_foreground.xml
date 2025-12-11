@@ -4,27 +4,61 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    
+    <!-- Group centered and scaled down (0.75) to prevent clipping -->
     <group
-        android:scaleX="0.9"
-        android:scaleY="0.9"
-        android:translateX="5"
-        android:translateY="5">
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:translateX="13.5"
+        android:translateY="13.5">
+
+        <!-- 1. Outer Dark Blue Circle (The Rim) -->
+        <!-- Radius 44, Center 54,54 -->
         <path
-            android:fillColor="#FFFFFF"
-            android:pathData="M54,20a34,34 0,1 1 -0.01,0" />
+            android:fillColor="#1976D2"
+            android:pathData="M54,10 A44,44 0 1,0 98,54 A44,44 0 0,0 54,10 Z" />
+
+        <!-- 2. Inner Light Blue Circle (The Face) -->
+        <!-- Radius 40, Center 54,54 -->
         <path
-            android:fillColor="#0057B8"
-            android:pathData="M54,26a28,28 0,1 1 -0.01,0" />
+            android:fillColor="#E1F5FE"
+            android:pathData="M54,14 A40,40 0 1,0 94,54 A40,40 0 0,0 54,14 Z" />
+
+        <!-- 3. Top Badge Circle (Moved down) -->
+        <!-- Center moved from 54,26 to 54,28. Radius 12. Top at 16, Bottom at 40. -->
         <path
-            android:fillColor="#FFFFFF"
-            android:pathData="M54,34a20,20 0,1 1 -0.01,0" />
+            android:fillColor="#1976D2"
+            android:pathData="M54,16 A12,12 0 1,0 54,40 A12,12 0 1,0 54,16 Z" />
+
+        <!-- 4. Text "10" (Rounded Strokes, White, Tighter spacing) -->
+        <!-- Number 1: Moved from x=48 to x=50. Y moved down +2 (23 to 33) -->
         <path
-            android:fillColor="#0057B8"
-            android:pathData="M54,24L54,54L74,54"
             android:strokeColor="#FFFFFF"
-            android:strokeWidth="6"
+            android:strokeWidth="2.5"
             android:strokeLineCap="round"
-            android:strokeLineJoin="round"
-            android:fillColor="@android:color/transparent" />
+            android:pathData="M50,23 V33" />
+            
+        <!-- Number 0: Moved from x=58 to x=56. Y moved down +2 (23 to 33) -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round"
+            android:pathData="M56,23 A3,5 0 1,1 56,33 A3,5 0 1,1 56,23" />
+
+        <!-- 5. Hands (Thinner, Centered) -->
+        <!-- Center Dot (Radius 4) -->
+        <path
+            android:fillColor="#1976D2"
+            android:pathData="M54,54 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+            
+        <!-- Hands: V-shape -->
+        <path
+            android:pathData="M35,42 L54,54 L73,42"
+            android:strokeColor="#1976D2"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" 
+            android:fillColor="#00000000"/>
+
     </group>
 </vector>

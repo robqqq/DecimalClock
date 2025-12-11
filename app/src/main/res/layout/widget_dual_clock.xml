@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Decimal Time Section -->
+    <TextView
+        android:id="@+id/widgetDecimalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00:00"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widgetLabelDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEC TIME"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:alpha="0.7"/>
+
+    <!-- Separator -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#80FFFFFF" />
+
+    <!-- Standard Time Section -->
+    <TextView
+        android:id="@+id/widgetStandardTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00:00"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widgetLabelStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STD TIME"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:alpha="0.7"/>
+
+</LinearLayout>
