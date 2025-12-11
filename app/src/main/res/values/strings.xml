@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Десятичные часы</string>
+    <string name="decimal_clock_widget_label">Десятичные часы</string>
+    <string name="decimal_conversion_hint">1 десятичный час = 2 стандартных часа 24 минуты</string>
+</resources>
